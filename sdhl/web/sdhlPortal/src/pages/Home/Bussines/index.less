@@ -1,0 +1,285 @@
+.cursorHover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bussinessWrap {
+  background-image: url('../../../assets/bussinessBg.png');
+  background-size: 100% 100%;
+  height: 1080px;
+  width: 100%;
+  // .center;
+  // flex-direction: column;
+  padding-top: 50px;
+
+  .title {
+    height: 93px;
+    width: 780px;
+    background-image: url('../../../assets/product.png');
+    background-size: 82% 100%;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+    .center;
+    background-position-x: center;
+    margin: 0 auto;
+  }
+
+  .main {
+    width: 100%;
+    height: calc(100% - 93px);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: relative;
+
+    .tabBtnWrap {
+      margin: 0 auto;
+      display: flex;
+      position: absolute;
+      top: 35px;
+      width: 80%;
+      left: 10%;
+      justify-content: space-around;
+
+      .tabBtn {
+        background-image: url('../../../assets/tabInline.png');
+        background-size: 100% 100%;
+        width: 200px;
+        height: 47px;
+        letter-spacing: 1px;
+        font-size: 18px;
+        .center;
+        color: #00F0FF;
+      }
+
+      .tabBtn:hover {
+        .cursorHover;
+      }
+    }
+
+    .middleCircle {
+      position: relative;
+      background: url('../../../assets/circle.png') 100% 100% no-repeat;
+      width: 626px;
+      height: 626px;
+      position: absolute;
+      right: calc(50% - 313px);
+      top: calc(50% - 313px);
+    }
+
+    .middleText {
+      font-size: 40px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #00DCFF;
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    .leftArrow {
+      position: absolute;
+      left: 10%;
+      top: calc(50% - 45px);
+    }
+
+    .leftArrow:hover {
+      .cursorHover;
+    }
+
+    .circle {
+      position: absolute;
+      right: calc(50% - 313px);
+      top: calc(50% - 313px);
+    }
+
+    .rightArrow {
+      position: absolute;
+      right: 10%;
+      top: calc(50% - 45px);
+    }
+
+    .rightArrow:hover {
+      .cursorHover;
+    }
+
+    .feture {
+      width: 274px;
+      height: 88px;
+      font-size: 16px;
+      color: #00DCFF;
+      position: absolute;
+      padding: 15px 0px 0px 20px;
+    }
+
+    .leftA {
+      top: 0;
+      left: -274px;
+    }
+
+    .leftB {
+      bottom: 10px;
+      left: -274px;
+    }
+
+    .rightA {
+      top: 0;
+      right: -274px;
+    }
+
+    .rightB {
+      bottom: 10px;
+      right: -274px;
+    }
+
+    .routh {
+      background: url('../../../assets/routh.png') 100% 100% no-repeat;
+      width: 309px;
+      height: 56px;
+      position: absolute;
+    }
+
+    .routhLeftA {
+      top: 95px;
+      left: -274px;
+    }
+
+    .routhLeftB {
+      bottom: 0;
+      left: -274px;
+      transform: rotateX(180deg);
+    }
+
+    .routhRightA {
+      top: 95px;
+      right: -274px;
+      transform: rotateY(180deg);
+    }
+
+    .routhRightB {
+      bottom: 0;
+      right: -274px;
+      transform: rotateZ(180deg);
+    }
+
+    @media screen and (max-width:980px) {
+      .leftA {
+        top: 0;
+        left: -170px;
+      }
+
+      .leftB {
+        bottom: 10px;
+        left: -170px;
+      }
+
+      .rightA {
+        top: 0;
+        right: -170px;
+      }
+
+      .rightB {
+        bottom: 10px;
+        right: -170px;
+      }
+
+      .routhLeftA {
+        top: 95px;
+        left: -170px;
+        width: 34%;
+      }
+
+      .routhLeftB {
+        bottom: 0;
+        left: -170px;
+        transform: rotateX(180deg);
+      }
+
+      .routhRightA {
+        top: 95px;
+        right: -170px;
+        transform: rotateY(180deg);
+        width: 34%;
+      }
+
+      .routhRightB {
+        bottom: 0;
+        right: -170px;
+        transform: rotateZ(180deg);
+      }
+
+      .leftArrow {
+        left: 5%;
+      }
+
+      .rightArrow {
+        right: 5%;
+      }
+    }
+
+    .leftFeature {
+      background-image: url('../../../assets/leftDes.png');
+    }
+
+    .rightFeature {
+      background-image: url('../../../assets/rightDes.png');
+    }
+
+    .viewMore {
+      position: absolute;
+      bottom: 50px;
+      left: calc(50% - 117px);
+
+      .productName {
+        width: 234px;
+        height: 50px;
+        background: rgba(50, 197, 255, 0.1);
+        border-radius: 25px;
+        border: 1px solid #32C5FF;
+        .center;
+        font-size: 24px;
+        color: #32C5FF;
+        margin-bottom: 15px;
+      }
+
+      .link {
+        text-align: center;
+        font-size: 16px;
+        color: #32C5FF;
+      }
+    }
+
+    .viewMore:hover {
+      .cursorHover;
+    }
+
+
+    .imgContent {
+      margin: 0 auto;
+      width: 570px;
+      height: 550px;
+      cursor: pointer;
+      // background: red;
+
+      .imgOut {
+        position: relative;
+        height: 550px;
+
+        .img1 {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          position: absolute;
+        }
+      }
+    }
+  }
+}

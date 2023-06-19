@@ -1,0 +1,103 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecandserviceWarper {
+  width: 100%;
+  height: 100%;
+  background: url("../../../assets/hometec.png");
+  background-size: 100% 100%;
+  padding: 50px 0;
+
+  .title {
+    color: #003676;
+    font-size: 50px;
+    background: url('../../../assets/RELIABLE.png') no-repeat 50% 100%;
+    width: 760px;
+    height: 90px;
+    .center;
+    margin: 0 auto;
+    font-family: PingFangSC-Medium, PingFang SC;
+  }
+
+  .subtitle {
+    width: inherit;
+    text-align: center;
+    font-family: PingFangSC-Regular, serif;
+    color: #495057;
+    font-size: 30px;
+    padding-top: 5px;
+  }
+
+  .showcard {
+    padding-right: 8.3%;
+    display: grid;
+    // grid-template-columns: minmax(1.5fr, 726px) minmax(1fr, 477px) minmax(1fr, 477px);
+    grid-template-columns: 1.5fr 1fr 1fr;
+    // grid-template-rows: 335px 335px;
+    row-gap: 40px;
+    column-gap: 40px;
+
+    .left {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+
+      .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+      // width: 477px;
+      // height: 335px;
+      box-shadow: unset;
+
+      .cardcontent {
+        font-size: 20px;
+        text-align: center;
+        height: 100%;
+        .center;
+        flex-direction: column;
+
+        .titleDes {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .footer {
+        height: 66px;
+      }
+
+      .footerMask {
+        height: 66px;
+      }
+
+      .cardfoot {
+        .center;
+        position: relative;
+
+        .link {
+          font-size: 24px;
+          color: #1773E2;
+        }
+
+        .arrow {
+          margin-left: 30px;
+        }
+      }
+    }
+
+    .card:hover {
+      box-shadow: 2px 2px 5px #666;
+    }
+  }
+}

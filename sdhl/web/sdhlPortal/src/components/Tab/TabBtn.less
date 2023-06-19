@@ -1,0 +1,74 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myTabs {
+  padding: 0;
+  margin: 0;
+
+  :global {
+    .ant-tabs-nav {
+      color: #ffffff;
+      border-bottom: unset;
+
+      .ant-tabs-nav-wrap {
+        margin-bottom: 4em;
+
+        // .center;
+        .ant-tabs-nav-list {
+          margin: 0 auto;
+          .center;
+          justify-content: space-between;
+          width: 68%;
+        }
+
+        @media screen and (max-width:980px) {
+          .ant-tabs-nav-list {
+            width: 98%;
+          }
+        }
+
+        .ant-tabs-tab {
+          background-image: url('../../assets/btn.png');
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          flex: 0 1 226px;
+          height: 76px;
+          position: relative;
+          margin: 0;
+          .center;
+
+          .ant-tabs-tab-btn {
+            color: #001757;
+            font-size: 22px;
+          }
+        }
+
+        .ant-tabs-tab-active {
+          background-image: url('../../assets/redBtn.png');
+          background-repeat: no-repeat;
+
+          .ant-tabs-tab-btn {
+            color: #ffffff;
+            font-size: 22px;
+          }
+        }
+
+        .ant-tabs-ink-bar {
+          background: unset;
+        }
+      }
+    }
+
+    .ant-tabs-nav::before {
+      border-bottom: unset;
+    }
+
+    .ant-tabs-content-holder {
+      border-left: unset;
+    }
+  }
+
+}

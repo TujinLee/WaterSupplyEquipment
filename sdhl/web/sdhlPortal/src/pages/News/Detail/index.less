@@ -1,0 +1,171 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsDeatilWarper {
+  width: 100%;
+  height: 100%;
+
+  .header {
+    height: 85px;
+    background: #2B429B;
+  }
+
+  .content {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+
+    .newsContent {
+      margin-left: 10%;
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-size: 36px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        color: #212529;
+        letter-spacing: 2px;
+        text-align: left;
+      }
+
+      .label {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 18px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #212529;
+        letter-spacing: 1px;
+
+        .origin {}
+
+        .share {
+          align-items: center;
+          width: 120px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .headImg {
+        width: 100%;
+        height: 550px;
+
+        .img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .text {
+        margin-top: 1em;
+        font-size: 26px;
+        color: #212529;
+        word-break: break-all;
+        white-space: pre-wrap;
+      }
+
+      img {
+        width: 100% !important;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .right {
+      width: 20%;
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+
+      .moreLink {
+        width: 390px;
+        height: 80px;
+        background: url('../../../assets/moreNews.png');
+        background-size: 100% 100%;
+        font-size: 24px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        .center;
+        cursor: pointer;
+      }
+
+      .moreLink:hover {
+        opacity: 0.8;
+      }
+
+      .newsCard {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        border: 1px solid #B7BEDA;
+        width: 390px;
+        height: 212px;
+        background: #F8F9FA;
+        box-shadow: 0px 5px 15px -7px #B7BEDA;
+
+        .prev {
+          width: inherit;
+          background: #B7BEDA;
+          padding-left: 20px;
+        }
+
+        .contentWrap {
+          padding: 20px;
+        }
+
+        .title {
+          font-size: 18px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #212529;
+          letter-spacing: 1px;
+        }
+
+        .content {
+          font-size: 14px;
+          font-family: PingFangSC-Regular, serif;
+          color: #868E96;
+          padding-top: 10px;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+          height: 60px;
+          overflow: hidden;
+        }
+
+        .pubDate {
+          font-size: 14px;
+          font-family: PingFangSC-Regular, serif;
+          color: #868E96;
+          padding-top: 10px;
+          text-align: left;
+        }
+      }
+
+      .newsCard:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity ease 500ms;
+      }
+    }
+  }
+
+  .companyaddress {
+    color: #212529;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0;
+  }
+}

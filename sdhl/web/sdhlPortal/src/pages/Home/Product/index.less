@@ -1,0 +1,147 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@primarycolor: #00397D;
+
+.productWrap {
+  background-image: url('../../../assets/productbg.png');
+  background-size: 100% 100%;
+  color: #ffffff;
+  padding-top: 50px;
+
+  .titleWrap {
+    .title {
+      width: 676px;
+      height: 93px;
+      margin: 0 auto;
+      .center;
+      background-image: url('../../../assets/INDUSTRY.png');
+      background-repeat: no-repeat;
+      font-size: 50px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #FFFFFF;
+    }
+  }
+
+  .content {
+    padding: 30px 5.2% 50px 10.4%;
+
+    .tabkey {
+      font-size: 24px;
+
+      .img {
+        margin-right: 1em;
+      }
+    }
+
+    .des {
+      display: flex;
+      align-items: center;
+      opacity: 0;
+      animation: moveup 0.5s;
+      animation-fill-mode: forwards;
+      // animation-delay: .3s;
+
+      .middle {
+        margin-right: -25px;
+        flex: 1;
+        min-height: 580px;
+        max-height: 580px;
+
+        .img {
+          width: 100%;
+          min-height: 580px;
+          max-height: 580px;
+        }
+      }
+
+      .card {
+        position: relative;
+        width: 480px;
+        // min-width: 480px;
+        // flex: 1 1 480px;
+        height: 670px;
+        background-image: url('../../../assets/productDes.png');
+        background-repeat: no-repeat;
+        padding: 62px;
+
+        .title {
+          font-size: 36px;
+          font-weight: 500;
+          color: #00397D;
+          letter-spacing: 2px;
+          margin-bottom: 1em;
+        }
+
+        .moreText {
+          font-size: 30px;
+          color: #00397D;
+          text-align: justify;
+          word-break: break-all;
+          max-height: 380px;
+          overflow: auto;
+        }
+
+        .viewMore {
+          position: absolute;
+          bottom: 26px;
+          left: calc(50% - 102px);
+          .center;
+          width: 248px;
+          height: 64px;
+          background: #FFFFFF;
+          border-radius: 40px;
+          border: 1px solid #00397D;
+
+          font-size: 30px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #00397D;
+          line-height: 42px;
+          letter-spacing: 2px;
+        }
+
+        .viewMore:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+      }
+
+      @media screen and (max-width: 980px) {
+        .middle {
+          flex: 1 1 auto;
+        }
+
+        .card {
+          min-width: 350px;
+        }
+      }
+    }
+
+    @keyframes moveup {
+      0% {
+        opacity: 0;
+        transform: translateY(-4.5rem);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    .content {
+      padding: 30px 20px 50px 20px;
+
+      .card {
+        min-width: 310px;
+      }
+    }
+  }
+}

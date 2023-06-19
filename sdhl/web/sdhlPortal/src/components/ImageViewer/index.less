@@ -1,0 +1,39 @@
+.ant-modal {
+  width: 1080px !important;
+  height: 675px;
+
+  .ant-modal-content {
+    .myIcon {
+      width: 56px;
+      height: 56px;
+      background: #FFFFFF;
+      border-radius: 0px 0px 0px 20px;
+      color: rgba(43, 66, 155, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ant-modal-body {
+      padding: 5px;
+      //   box-shadow: 0 0 10px rgb(202, 204, 219);
+      position: relative;
+
+      .caseimg {
+        // width: 1070px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1, 1);
+        border-radius: unset;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width:980px) {
+  .ant-modal {
+    width: 700px !important;
+  }
+}

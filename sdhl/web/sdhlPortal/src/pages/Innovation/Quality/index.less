@@ -1,0 +1,148 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quality {
+  margin-top: -30px;
+
+  .qualification {
+    background-image: url('../../../assets/honorBg.png');
+    background-size: 100% 100%;
+    width: 100%;
+    color: #ffffff;
+    padding-top: 70px;
+
+
+    .firstTitle {
+      // position: absolute;
+      .center;
+      background-image: url('../../../assets/qualifications.png');
+      background-size: 100% 100%;
+      width: 1136px;
+      height: 117px;
+      font-size: 46px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin: 0 auto;
+    }
+
+    .secondTitle {
+      font-size: 30px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .company {
+      width: 67%;
+      margin: 0 auto;
+
+      .qualityControl {
+        display: flex;
+        margin-top: 3em;
+        justify-content: center;
+
+        .img {
+          width: 64px;
+        }
+      }
+
+      .imgGroups {
+        margin-top: -4em;
+        display: flex;
+
+        .left {
+          margin-right: -2em;
+          margin-top: 10em;
+          flex: 1 1 24%;
+        }
+
+        .middle {
+          margin-bottom: 1em;
+          flex: 1 1 24%;
+        }
+
+        .right {
+          margin-left: -2em;
+          margin-top: 10em;
+          flex: 1 1 24%;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+
+    @media screen and (max-width:980px) {
+      .company {
+        width: 95%;
+      }
+    }
+  }
+
+  .control {
+    // color: #ffffff;
+    // .center;
+    // flex-direction: column;
+    // justify-content: flex-start;
+
+    .firstTitle {
+      .center;
+      background-image: url('../../../assets/quality.png');
+      background-size: 100% 100%;
+      width: 577px;
+      height: 117px;
+      font-size: 46px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin: 0 auto;
+      margin-top: 1em;
+      color: #2B429B;
+      padding-bottom: 15px;
+    }
+
+    .secondTitle {
+      font-size: 30px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      letter-spacing: 1px;
+      color: #2B429B;
+      text-align: center;
+    }
+
+    .photos {
+      display: flex;
+      padding: 100px 0;
+      width: 80%;
+      margin: 0 auto;
+
+      .left {
+        margin-right: 2em;
+        flex: 1 1 auto;
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1 1 auto;
+
+        // img {
+        //   height: 382px;
+        // }
+      }
+
+      img {
+        width: 100%;
+        // height: 100%;
+        // object-fit: cover;
+      }
+    }
+  }
+}

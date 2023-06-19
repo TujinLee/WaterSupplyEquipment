@@ -1,0 +1,140 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsWarper {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  .menu {
+    height: 85px;
+    background: #2B429B;
+  }
+
+  .tabNews {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-top: 50px;
+
+    .ant-tabs-tab .ant-tabs-tab-btn {
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #2B429B;
+      line-height: 45px;
+      letter-spacing: 1px;
+    }
+
+    .ant-tabs-ink-bar {
+      background: #2B429B;
+    }
+
+    .caption {
+      color: #2B429B;
+      font-size: 32px;
+      font-family: PingFangSC-Regular, serif;
+    }
+
+    .newsUI {
+      cursor: pointer;
+      display: flex;
+      width: 80%;
+      height: 250px;
+      background: #F8F9FA;
+      // margin: 0 auto;
+      margin-bottom: 30px;
+      border-radius: 8px;
+
+      .imgContent {
+        width: 400px;
+        height: 100%;
+
+        .img {
+          height: 100%;
+          width: 100%;
+          border-radius: 8px;
+        }
+      }
+
+      .textContent {
+        flex: 1;
+        padding: 10px;
+        text-align: left;
+        position: relative;
+
+        .title {
+          font-size: 26px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #212529;
+          letter-spacing: 1px;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+          height: 80px;
+          overflow: hidden;
+          // margin-bottom: 1em;
+        }
+
+        .mainbody {
+          font-size: 20px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          color: #868E96;
+          letter-spacing: 1px;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+          height: 80px;
+          overflow: hidden;
+        }
+
+        .footer {
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          left: 0;
+          right: 0;
+          padding: 10px;
+          font-size: 20px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #868E96;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .newsUI:hover {
+      box-shadow: 10px 10px 5px #E9ECEF;
+      opacity: 0.8;
+    }
+
+    @media screen and (max-width:980px) {
+      .newsUI {
+        width: 100%;
+
+        .imgContent {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .companyaddress {
+    color: #212529;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0;
+  }
+}

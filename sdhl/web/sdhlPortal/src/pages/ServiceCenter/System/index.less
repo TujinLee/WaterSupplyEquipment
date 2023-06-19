@@ -1,0 +1,148 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.system {
+  margin-top: -30px;
+
+  //服务内涵
+  .connotation {
+    color: #2B429B;
+    margin-bottom: 4em;
+
+    .firstTitle {
+      background-image: url('../../../assets/connotation.png');
+      background-size: 100% 100%;
+      font-size: 48px;
+      width: 967px;
+      height: 93px;
+      .center;
+      font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin: 0 auto;
+    }
+
+    .secondTitle {
+      font-size: 30px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .photoList {
+      // display: flex;
+      // justify-content: space-between;
+      // padding: 3em 0;
+      // flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .card {
+        // flex: 1;
+        // min-width: 300px;
+        .center;
+        padding: 10px;
+        flex-direction: column;
+
+        img {
+          width: 100%;
+        }
+
+        .redTitle {
+          font-size: 48px;
+          color: #E02020;
+          letter-spacing: 3px;
+        }
+
+        .title {
+          font-size: 30px;
+          color: #495057;
+          letter-spacing: 2px;
+        }
+      }
+
+      .card:nth-last-child(1) {
+        margin: 0;
+      }
+    }
+  }
+
+  //销售服务网络
+  .saleService {
+    background-image: url('../../../assets/saleServiceBg.png');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 1372px;
+    color: #ffffff;
+    padding-top: 100px;
+
+    .firstTitle {
+      .center;
+      background-image: url('../../../assets/network.png');
+      background-size: 100% 100%;
+      width: 669px;
+      height: 93px;
+      font-size: 46px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin: 0 auto;
+    }
+
+    .secondTitle {
+      font-size: 30px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      letter-spacing: 1px;
+      width: 60%;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 1em;
+    }
+  }
+
+  //技术团队
+  .techTeam {
+    // .center;
+    color: #2B429B;
+    // flex-direction: column;
+    padding: 4em 0;
+
+    .firstTitle {
+      background-image: url('../../../assets/Service.png');
+      background-size: 100% 100%;
+      font-size: 48px;
+      width: 555px;
+      height: 93px;
+      .center;
+      font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin: 0 auto;
+    }
+
+    .secondTitle {
+      font-size: 30px;
+      letter-spacing: 1px;
+      text-align: center;
+      width: 95%;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+
+    @media screen and (max-width:1600px) {
+      .secondTitle {
+        width: 100%;
+        padding: 0 10px;
+      }
+    }
+
+    .img {
+      height: 702px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+}

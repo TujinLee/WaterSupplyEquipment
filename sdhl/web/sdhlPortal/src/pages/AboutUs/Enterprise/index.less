@@ -1,0 +1,297 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enterprise {
+  margin-top: -140px;
+
+  .company {
+    background-image: url('../../../assets/hualiBg.png');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 800px;
+    position: relative;
+
+    .text {
+      padding: 54px 42px 120px 61px;
+      width: 927px;
+      // width: 50%;
+      height: 400px;
+      background: #2B429B;
+      opacity: 0.7;
+      position: absolute;
+      right: 0;
+      bottom: 76px;
+      font-size: 24px;
+      color: #FFFFFF;
+      letter-spacing: 1px;
+
+      .textDes {
+        overflow: hidden;
+        height: 100%;
+
+        .scrollTxt {
+          transition: all ease 1s;
+        }
+      }
+
+      .img {
+        position: absolute;
+        bottom: 40px;
+        left: calc(50% - 25px);
+        transition: all ease 1s;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .product {
+    color: #2B429B;
+
+    .firstTitle {
+      .center;
+      background-image: url('../../../assets/production.png');
+      background-size: 100% 100%;
+      width: 890px;
+      height: 93px;
+      font-size: 46px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin: 0 auto;
+      margin-top: 1em;
+    }
+
+    .card {
+      // padding: 4em;
+      display: flex;
+      justify-content: center;
+
+      .left {
+        flex: 0 1 710px;
+        margin-right: 2em;
+        position: relative;
+      }
+
+      .right {
+        flex: 0 1 1042px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .text {
+          // width: 1042px;
+          font-size: 24px;
+          color: #343A40;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+          text-align: justify;
+        }
+
+        .textimg {
+          flex: 1
+        }
+
+        .img {
+          display: flex;
+          justify-content: space-between;
+
+          .each {
+            position: relative;
+            width: 48.5%;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .tag {
+        position: absolute;
+        padding: 10px 20px;
+        background: linear-gradient(90deg, #FFFFFF 0%, #DEE2E6 100%);
+        border-radius: 100px 0px 0px 100px;
+        font-size: 30px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        color: #343A40;
+        line-height: 42px;
+        letter-spacing: 1px;
+        .center;
+        right: 0;
+        bottom: 45px;
+      }
+
+      .tagred {
+        color: #FFFFFF;
+        background: linear-gradient(90deg, #FF433C 0%, #E02020 100%);
+      }
+    }
+  }
+
+  .twelveYears {
+    color: #2B429B;
+    // .center;
+    // flex-direction: column;
+    // justify-content: flex-start;
+    width: 100%;
+
+    .firstTitle {
+      .center;
+      background-image: url('../../../assets/dobest.png');
+      background-size: 100% 100%;
+      width: 990px;
+      height: 93px;
+      font-size: 46px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin: 0 auto;
+      margin-top: 1em;
+    }
+
+    .secondTitle {
+      font-size: 30px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .content {
+      width: 100%;
+      background-image: url('../../../assets/twelveYearBg.png');
+      background-size: 100% 100%;
+      position: relative;
+      margin-top: 6em;
+
+      .text {
+        position: absolute;
+        top: 99px;
+        right: 66px;
+        width: 40%;
+        height: 320px;
+        font-size: 28px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        color: #2B429B;
+        letter-spacing: 1px;
+      }
+
+      .img {
+        width: 50%;
+        height: 757px;
+        margin-top: -50px;
+      }
+
+      .next {
+        position: absolute;
+        right: 0;
+        top: 500px;
+        width: 245px;
+        height: 79px;
+        background: linear-gradient(180deg, #FF2B22 0%, #E02020 100%);
+        border-radius: 61px 0px 0px 61px;
+        font-size: 34px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #FFFFFF;
+        letter-spacing: 2px;
+        .center;
+      }
+
+      .next:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .timeLine {
+        justify-content: space-evenly;
+        display: flex;
+        padding: 5em 0;
+
+        .red {
+          cursor: unset !important;
+          width: 42px;
+          height: 42px;
+          background: #FFFFFF;
+          border: 1px solid #FF2B22 !important;
+          border-radius: 21px;
+          .center;
+
+          .redCenter {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(180deg, #FF2B22 0%, #CC144A 100%) !important;
+            border-radius: 15px;
+          }
+
+          .year {
+            color: #E02020 !important;
+          }
+        }
+
+        .blue {
+          position: relative;
+          width: 42px;
+          height: 42px;
+          background: #FFFFFF;
+          border: 1px solid #1454E9;
+          border-radius: 21px;
+          .center;
+
+          .blueCenter {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(180deg, #0080FE 0%, #2B429B 100%);
+            border-radius: 15px;
+          }
+        }
+
+        .blue:not(:last-child)::before {
+          content: '';
+          width: 150px;
+          height: 2px;
+          background-color: rgba(0, 128, 254, 1);
+          position: absolute;
+          left: 40px;
+        }
+
+        .item {
+          position: relative;
+          cursor: pointer;
+
+          .year {
+            position: absolute;
+            height: 50px;
+            min-width: 125px;
+            font-size: 30px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #2B429B;
+            line-height: 50px;
+            text-align: center;
+          }
+        }
+
+        .item:nth-child(odd) {
+          .year {
+            top: -100%;
+          }
+        }
+
+        .item:nth-child(even) {
+          .year {
+            bottom: -100%;
+          }
+        }
+
+        .item:hover {
+          border-color: #1454e980;
+        }
+      }
+    }
+  }
+}

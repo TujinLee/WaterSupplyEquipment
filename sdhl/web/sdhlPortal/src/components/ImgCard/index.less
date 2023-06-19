@@ -1,0 +1,90 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transition {
+  transition: all 0.4s ease;
+}
+
+.displayCard {
+  display: flex;
+  flex-direction: column;
+  height: 337px;
+  width: 424px;
+  border-radius: 0px 0px 8px 8px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 16px;
+
+  .content {
+    flex: 1;
+    overflow: hidden;
+
+    :global {
+      .ant-image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    img {
+      transform: scale(1, 1);
+      height: 100%;
+      width: 100%;
+      .transition;
+    }
+  }
+
+  .contentMask {
+    flex: 1;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.4s ease;
+    background: #E02020;
+    font-size: 22px;
+    color: #FFFFFF;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    .center;
+    pointer-events: none;
+  }
+
+  .footer {
+    flex-basis: 50px;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    letter-spacing: 1px;
+    .center;
+    .transition;
+  }
+}
+
+.displayCard:hover {
+  .content {
+    flex: 1;
+
+    img {
+      transform: scale(1.1, 1.1);
+      // opacity: 0.8;
+      .transition;
+    }
+  }
+
+  .contentMask {
+    flex: 1;
+    opacity: 0.3;
+  }
+
+  .footer {
+    background: #E02020;
+  }
+
+}

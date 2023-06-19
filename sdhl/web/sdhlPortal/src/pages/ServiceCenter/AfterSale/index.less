@@ -1,0 +1,230 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saleWrap {
+  margin-top: -30px;
+
+  .aftersale {
+    color: #2B429B;
+
+    .firstTitle {
+      background-image: url('../../../assets/professional.png');
+      background-size: 100% 100%;
+      font-size: 48px;
+      width: 1029px;
+      height: 93px;
+      .center;
+      font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin: 0 auto;
+    }
+
+    .secondTitle {
+      font-size: 30px;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    .sevenStar {
+      background-image: url('../../../assets/saleBg.png');
+      background-size: 100% 100%;
+      height: 1292px;
+      padding: 125px 105px 77px 80px;
+      position: relative;
+
+
+      .topLeft {
+        width: 40%;
+
+        .title {
+          font-size: 42px;
+          color: #FFFFFF;
+          letter-spacing: 3px;
+        }
+
+        .star {
+          width: 70%;
+          display: flex;
+          justify-content: space-between;
+          margin: 2em 0 4em 0;
+          flex-wrap: wrap;
+        }
+
+        .text {
+          font-size: 28px;
+          letter-spacing: 2px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          color: rgba(233, 236, 239, 1);
+
+          .medium {
+            font-family: PingFangSC-Medium, PingFang SC;
+            color: rgba(0, 252, 255, 1);
+          }
+        }
+      }
+
+      .topRight {
+        position: absolute;
+        right: 18%;
+        top: 14px;
+      }
+
+      .bottomLeft {
+        position: absolute;
+        left: 3%;
+        bottom: 77px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 44%;
+
+        .each {
+          flex: 1;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .bottomRight {
+        width: 40%;
+        height: 420px;
+        position: absolute;
+        bottom: 77px;
+        right: 0;
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        color: rgba(233, 236, 239, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .medium {
+          font-family: PingFangSC-Medium, PingFang SC;
+          color: rgba(0, 252, 255, 1);
+          font-size: 44px;
+        }
+      }
+
+      //适配
+      @media screen and (max-width:1120px) {
+        .topRight {
+          right: 3%;
+        }
+
+        .topLeft .text {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .lightSpot {
+    color: #2B429B;
+    background-image: url('../../../assets/lightSpotBg.png');
+    background-size: 100% 100%;
+    padding-top: 4em;
+
+    .firstTitle {
+      background-image: url('../../../assets/Highlights.png');
+      background-size: 100% 100%;
+      font-size: 48px;
+      width: 832px;
+      height: 93px;
+      .center;
+      font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin: 0 auto;
+    }
+
+    .cardList {
+
+      padding: 3em 5%;
+      // flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      // grid-template-rows: repeat(3, 33%);     
+      grid-column-gap: 60px;
+      grid-row-gap: 40px;
+
+      .card {
+        background-image: url('../../../assets/lightSpotCard.png');
+        background-size: 100% 100%;
+        min-height: 297px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2em;
+
+        .title {
+          font-size: 40px;
+          color: #2B429B;
+          letter-spacing: 2px;
+          margin-bottom: 1em;
+        }
+
+        .text {
+          font-size: 30px;
+          color: rgba(43, 66, 155, 0.7);
+          letter-spacing: 1px;
+        }
+      }
+
+      // @media screen and (max-width:1500px) {
+      //   .card {
+      //     margin-right: 2%;
+      //     flex: 0 1 32%;
+      //   }
+      // }
+
+      // .card:nth-of-type(3n) {
+      //   margin-right: 0;
+      // }
+    }
+  }
+
+  .techTrain {
+    background-image: url('../../../assets/techTrain.png');
+    background-size: 100% 100%;
+    height: 952px;
+    display: flex;
+    align-items: center;
+
+    .left {
+      max-width: 768px;
+      width: 50%;
+      height: 600px;
+      background: #FFFFFFCC;
+      border-radius: 0px 45px 45px 0px;
+      padding: 2em;
+      padding-right: 3em;
+
+      .title {
+        color: #2B429B;
+        letter-spacing: 2px;
+        font-size: 40px;
+        margin-bottom: 1em;
+      }
+
+      .text {
+        font-size: 26px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #2B429B;
+        line-height: 37px;
+        letter-spacing: 1px;
+        text-align: justify;
+        text-indent: 2em;
+      }
+    }
+  }
+}

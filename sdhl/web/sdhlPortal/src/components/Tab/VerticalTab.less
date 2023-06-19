@@ -1,0 +1,38 @@
+.myTabs {
+  padding: 0;
+  margin: 0;
+
+  :global {
+    .ant-tabs-nav {
+      color: #ffffff;
+      width: 200px;
+
+      .ant-tabs-nav-wrap {
+        border-left: 1px solid #00F0FF;
+
+        .ant-tabs-tab {
+          margin-bottom: 50px;
+        }
+
+        .ant-tabs-tab-active {
+          background-image: url('../../assets/tabBtn.png');
+          background-repeat: no-repeat;
+
+          .ant-tabs-tab-btn {
+            color: #00397D;
+          }
+        }
+
+        .ant-tabs-ink-bar {
+          background: unset;
+        }
+      }
+    }
+
+    .ant-tabs-content-holder {
+      border-left: unset;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

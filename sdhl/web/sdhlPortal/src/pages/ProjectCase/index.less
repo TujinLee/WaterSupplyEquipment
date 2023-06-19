@@ -1,0 +1,202 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectCase {
+  padding: 0;
+  margin: 0;
+
+  .header {
+    background: url('../../assets/projectCase.png');
+    background-size: 100% 100%;
+    height: 614px;
+    .center;
+    flex-direction: column;
+    position: relative;
+
+    .title {
+      font-size: 46px;
+      color: #FFFFFF;
+      letter-spacing: 2px;
+      // display: flex;
+      // align-items: center;
+      // white-space: pre;
+
+      .red {
+        color: rgba(255, 6, 19, 1);
+        font-size: 80px;
+        font-style: italic;
+        font-weight: bold;
+        margin: 0 15px;
+      }
+    }
+
+    .oneRow {
+      display: inline-block;
+    }
+
+    @media screen and (max-width:980px) {
+      .oneRow {
+        display: block;
+      }
+    }
+
+    .redBottom {
+      position: absolute;
+      height: 30px;
+      background: #FF2B22;
+      bottom: -30px;
+      width: 95%;
+      background: linear-gradient(-70deg, transparent 10px, #FF2B22 0) right, linear-gradient(70deg, transparent 10px, #FF2B22 0) left;
+      background-size: 50% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .main {
+    margin-top: -78px;
+    padding: 0 2.5%;
+
+    .title {
+      background-image: url('../../assets/waterSupplyHd.png');
+      width: 540px;
+      height: 76px;
+      font-size: 40px;
+      font-weight: 500;
+      color: #FFFFFF;
+      .center;
+      position: relative;
+
+      .star {
+        position: absolute;
+        left: 20px;
+      }
+    }
+
+    .eachWrap {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 4em 0;
+
+      .each {
+        width: 24%;
+        min-width: 300px;
+        height: 320px;
+        box-shadow: unset;
+        margin-right: 1%;
+        margin-bottom: 2%;
+
+        .cardContent {
+          flex: none;
+          height: 257px;
+          border-radius: 16px;
+        }
+
+        .cardFoot {
+          // background: rgba(244, 245, 250, 1);
+          flex: 1;
+          .center;
+
+          .text {
+            color: #262A33;
+            font-size: 24px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .each:nth-of-type(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .ant-modal {
+    width: 1080px !important;
+    height: 675px;
+
+    .ant-modal-content {
+      .myIcon {
+        width: 56px;
+        height: 56px;
+        background: #FFFFFF;
+        border-radius: 0px 0px 0px 20px;
+        color: rgba(43, 66, 155, 1);
+        .center;
+      }
+
+      .ant-modal-body {
+
+        padding: 5px;
+        box-shadow: 0 0 10px rgb(202, 204, 219);
+        position: relative;
+
+        .caseimg {
+          // width: 1070px;
+          width: 100%;
+          height: 585px;
+          object-fit: cover;
+        }
+
+        .topText {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          top: -60px;
+          font-size: 36px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #FFFFFF;
+          letter-spacing: 2px;
+          line-height: 50px;
+        }
+
+        .bottomText {
+          width: 100%;
+          height: 79px;
+          background: linear-gradient(180deg, rgba(43, 66, 155, 0) 0%, rgba(43, 66, 155, 0.58) 51%, #2B429B 100%);
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          font-size: 18px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #FFFFFF;
+          letter-spacing: 1px;
+          padding: 5px;
+        }
+
+        .left {
+          position: absolute;
+          top: calc(50% - 35px);
+          left: -100px;
+          cursor: pointer;
+        }
+
+        .left:hover,
+        .right:hover {
+          opacity: 0.8;
+        }
+
+        .right {
+          position: absolute;
+          top: calc(50% - 35px);
+          right: -100px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:980px) {
+    .ant-modal {
+      width: 700px !important;
+    }
+  }
+}

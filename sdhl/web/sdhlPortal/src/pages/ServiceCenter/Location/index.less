@@ -1,0 +1,67 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//欢迎
+.welcome {
+  // .center;
+  color: #2B429B;
+  // flex-direction: column;
+  padding: 4em 0;
+
+  .firstTitle {
+    background-image: url('../../../assets/welcome.png');
+    background-size: 100% 100%;
+    font-size: 48px;
+    width: 654px;
+    height: 93px;
+    .center;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 auto;
+  }
+
+  .secondTitle {
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  .hualiLocation {
+    height: 500px;
+    width: 100%;
+
+    .customize {
+      position: relative;
+
+      .card {
+        position: absolute;
+        top: -170px;
+        left: -150px;
+        font-size: 12px;
+        padding: 16px 12px 17px 13px;
+        width: 360px;
+        height: 150px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        font-family: PingFang-SC-Regular, PingFang-SC;
+        font-weight: 400;
+        color: #2B429B;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
